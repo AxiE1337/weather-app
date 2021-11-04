@@ -1,0 +1,129 @@
+.weather {
+  padding: 2em;
+  height: 100%;
+  width: 60vw;
+  border-radius: 25px;
+  font-family: "Zen Kurenaido", sans-serif;
+  color: #00203fff;
+  background-color: #979797;
+  background: linear-gradient(to right, #d8d3b581, #a0cfaa7c);
+}
+.weather h2 {
+  background-color: rgba(114, 165, 125, 0.2);
+  border-radius: 25px;
+  padding: 0.3em;
+}
+.weather form {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+.weather form input {
+  border: none;
+  font-size: 2rem;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.weather form input::-moz-placeholder {
+  font-size: 1.5rem;
+  color: #00203fff;
+}
+.weather form input:-ms-input-placeholder {
+  font-size: 1.5rem;
+  color: #00203fff;
+}
+.weather form input::placeholder {
+  font-size: 1.5rem;
+  color: #00203fff;
+}
+.weather form input:focus {
+  outline: none;
+}
+.weather form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+.weather form button p {
+  margin: 0;
+}
+.weather form button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.weather .city h1 {
+  text-align: center;
+  border-bottom: 1px solid #00203fff;
+}
+.weather .city img {
+  padding-left: 1%;
+  transform: scale(1.5);
+  transition: 200ms ease-in-out;
+}
+.weather .city img:hover {
+  transform: scale(2);
+}
+.weather .stats {
+  height: 100%;
+  border-radius: 25px;
+  padding: 0.6em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .weather {
+    padding: 0.5em;
+    width: 70vw;
+  }
+  .weather h2 {
+    background-color: rgba(114, 165, 125, 0.2);
+    border-radius: 25px;
+    padding: 0.1em;
+    font-size: 1.2rem;
+  }
+  .weather form {
+    height: 5vh;
+  }
+  .weather form input {
+    font-size: 1.5rem;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .weather form input::-moz-placeholder {
+    font-size: 1rem;
+    color: #00203fff;
+  }
+  .weather form input:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #00203fff;
+  }
+  .weather form input::placeholder {
+    font-size: 1rem;
+    color: #00203fff;
+  }
+  .weather form button {
+    width: 35%;
+    height: 100%;
+  }
+  .weather form button p {
+    margin: 0;
+  }
+  .weather .city h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .weather .city img {
+    padding-left: 30%;
+  }
+  .weather .stats {
+    padding: 0.3em;
+  }
+}/*# sourceMappingURL=weather.css.map */

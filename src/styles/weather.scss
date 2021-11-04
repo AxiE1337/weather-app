@@ -1,0 +1,117 @@
+.weather {
+  padding: 2em;
+  height: 100%;
+  width: 60vw;
+  border-radius: 25px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #00203fff;
+  background-color: rgb(151, 151, 151);
+  background: linear-gradient(to right, #d8d3b581, #a0cfaa7c);
+  h2 {
+    background-color: rgba(114, 165, 125, 0.2);
+    border-radius: 25px;
+    padding: 0.3em;
+  }
+  form {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    input {
+      border: none;
+      font-size: 2rem;
+      width: 90%;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+    input::placeholder {
+      font-size: 1.5rem;
+      color: #00203fff;
+    }
+    input:focus {
+      outline: none;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      width: 15%;
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+      p {
+        margin: 0;
+      }
+    }
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  .city {
+    h1 {
+      text-align: center;
+      border-bottom: 1px solid #00203fff;
+    }
+    img {
+      padding-left: 1%;
+      transform: scale(1.5);
+      transition: 200ms ease-in-out;
+    }
+    img:hover {
+      transform: scale(2);
+    }
+  }
+  .stats {
+    height: 100%;
+    border-radius: 25px;
+    padding: 0.6em;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weather {
+    padding: 0.5em;
+    width: 70vw;
+    h2 {
+      background-color: rgba(114, 165, 125, 0.2);
+      border-radius: 25px;
+      padding: 0.1em;
+      font-size: 1.2rem;
+    }
+    form {
+      height: 5vh;
+      input {
+        font-size: 1.5rem;
+        width: 90%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+      }
+      input::placeholder {
+        font-size: 1rem;
+        color: #00203fff;
+      }
+      button {
+        width: 35%;
+        height: 100%;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .city {
+      h1 {
+        font-size: 1.5em;
+        text-align: center;
+      }
+      img {
+        padding-left: 30%;
+      }
+    }
+    .stats {
+      padding: 0.3em;
+    }
+  }
+}
