@@ -115,3 +115,50 @@
     }
   }
 }
+@media only screen and (max-height: 500px) {
+  body {
+    height: 100%;
+  }
+  .weather {
+    padding: 1em;
+    width: 65vw;
+    h2 {
+      background-color: rgba(114, 165, 125, 0.2);
+      border-radius: 25px;
+      padding: 0.1em;
+      font-size: 1.2rem;
+    }
+    form {
+      height: 10vh;
+      input {
+        font-size: 1.5rem;
+        width: 90%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+      }
+      input::placeholder {
+        font-size: 1rem;
+        color: #00203fff;
+      }
+      button {
+        width: 35%;
+        height: 100%;
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .city {
+      h1 {
+        font-size: 1.5em;
+        text-align: center;
+      }
+      img {
+        padding-left: 30%;
+      }
+    }
+    .stats {
+      padding: 0.3em;
+    }
+  }
+}

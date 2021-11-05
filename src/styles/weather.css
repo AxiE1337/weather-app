@@ -126,4 +126,58 @@
   .weather .stats {
     padding: 0.3em;
   }
+}
+@media only screen and (max-height: 500px) {
+  body {
+    height: 100%;
+  }
+
+  .weather {
+    padding: 1em;
+    width: 65vw;
+  }
+  .weather h2 {
+    background-color: rgba(114, 165, 125, 0.2);
+    border-radius: 25px;
+    padding: 0.1em;
+    font-size: 1.2rem;
+  }
+  .weather form {
+    height: 10vh;
+  }
+  .weather form input {
+    font-size: 1.5rem;
+    width: 90%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+  }
+  .weather form input::-moz-placeholder {
+    font-size: 1rem;
+    color: #00203fff;
+  }
+  .weather form input:-ms-input-placeholder {
+    font-size: 1rem;
+    color: #00203fff;
+  }
+  .weather form input::placeholder {
+    font-size: 1rem;
+    color: #00203fff;
+  }
+  .weather form button {
+    width: 35%;
+    height: 100%;
+  }
+  .weather form button p {
+    margin: 0;
+  }
+  .weather .city h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .weather .city img {
+    padding-left: 30%;
+  }
+  .weather .stats {
+    padding: 0.3em;
+  }
 }/*# sourceMappingURL=weather.css.map */
