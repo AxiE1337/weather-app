@@ -1,14 +1,14 @@
 .weather {
   padding: 2em;
-  height: 100%;
-  width: 60vw;
+  min-height: 100%;
+  min-width: 80%;
   border-radius: 25px;
   font-family: 'Zen Kurenaido', sans-serif;
-  color: #00203fff;
+  color: rgb(0, 21, 41);
   background-color: rgb(151, 151, 151);
-  background: linear-gradient(to right, #d8d3b581, #a0cfaa7c);
+  background: linear-gradient(to right, #d8d3b581, #a0b8cf7c);
   h2 {
-    background-color: rgba(114, 165, 125, 0.2);
+    background-color: rgba(114, 163, 165, 0.308);
     border-radius: 25px;
     padding: 0.3em;
   }
@@ -73,8 +73,7 @@
 
 @media only screen and (max-width: 768px) {
   .weather {
-    padding: 0.5em;
-    width: 70vw;
+    padding: 0.8em;
     h2 {
       background-color: rgba(114, 165, 125, 0.2);
       border-radius: 25px;
@@ -90,13 +89,14 @@
         border-radius: 10px 0 0 10px;
       }
       input::placeholder {
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #00203fff;
       }
       button {
         width: 35%;
         height: 100%;
         p {
+          font-size: 0.8rem;
           margin: 0;
         }
       }
@@ -117,11 +117,10 @@
 }
 @media only screen and (max-height: 500px) {
   body {
-    height: 100%;
+    min-height: 100%;
   }
   .weather {
     padding: 1em;
-    width: 65vw;
     h2 {
       background-color: rgba(114, 165, 125, 0.2);
       border-radius: 25px;
