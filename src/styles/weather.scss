@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 3em;
     input {
       border: none;
       font-size: 2rem;
@@ -81,7 +81,7 @@
       font-size: 1.2rem;
     }
     form {
-      height: 5vh;
+      height: 2em;
       input {
         font-size: 1.5rem;
         width: 90%;
@@ -116,9 +116,6 @@
   }
 }
 @media only screen and (max-height: 500px) {
-  body {
-    min-height: 100%;
-  }
   .weather {
     padding: 1em;
     h2 {
@@ -128,7 +125,7 @@
       font-size: 1.2rem;
     }
     form {
-      height: 10vh;
+      height: 2.5em;
       input {
         font-size: 1.5rem;
         width: 90%;
