@@ -28,7 +28,7 @@ interface Iweather {
 }
 
 const Weather: React.FC = () => {
-  const [cityOption, setCityOption] = useState<any>([
+  const cityOption = [
     'London',
     'Moscow',
     'Paris',
@@ -88,7 +88,7 @@ const Weather: React.FC = () => {
     'Luxor',
     'Edinburgh',
     'Honolulu',
-  ])
+  ]
   const [city, setCity] = useState<string>('')
   const [time, setTime] = useState<any>('')
   const [weather, setWeather] = useState<Iweather['weather']>()
