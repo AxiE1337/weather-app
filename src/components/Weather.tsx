@@ -28,6 +28,67 @@ interface Iweather {
 }
 
 const Weather: React.FC = () => {
+  const [cityOption, setCityOption] = useState<any>([
+    'London',
+    'Moscow',
+    'Paris',
+    'Bangkok',
+    'Singapore',
+    'New York',
+    'Kuala Lumpur',
+    'Hong Kong',
+    'Dubai',
+    'Istanbul',
+    'Rome',
+    'Shanghai',
+    'Los Angeles',
+    'Las Vegas',
+    'Miami',
+    'Toronto',
+    'Barcelona',
+    'Dublin',
+    'Amsterdam',
+    'Cairo',
+    'Prague',
+    'Vienna',
+    'Madrid',
+    'San Francisco',
+    'Vancouver',
+    'Budapest',
+    'Rio de Janeiro',
+    'Berlin',
+    'Tokyo',
+    'Mexico City',
+    'Buenos Aires',
+    'St. Petersburg',
+    'Seoul',
+    'Athens',
+    'Jerusalem',
+    'Seattle',
+    'Delhi',
+    'Sydney',
+    'Mumbai',
+    'Munich',
+    'Venice',
+    'Florence',
+    'Beijing',
+    'Philadelphia',
+    'Chicago',
+    'San Diego',
+    'Stockholm',
+    'Washington D.C.',
+    'Warsaw0',
+    'Sharm el-Sheikh',
+    'Dallas',
+    'Kiev',
+    'Shenzhen',
+    'Bucharest',
+    'Orlando',
+    'Houston',
+    'Luxor',
+    'Edinburgh',
+    'Honolulu',
+  ])
   const [city, setCity] = useState<string>('')
   const [time, setTime] = useState<any>('')
   const [weather, setWeather] = useState<Iweather['weather']>()
@@ -54,11 +115,18 @@ const Weather: React.FC = () => {
         <input
           value={city}
           placeholder=' Enter city name...'
+          list='city'
           type='text'
           onChange={(e) => {
             setCity(e.target.value)
           }}
         />
+        <datalist id='city'>
+          {city.length > 1 &&
+            cityOption.map((cityOption: any) => {
+              return <option>{cityOption}</option>
+            })}
+        </datalist>
         <button type='submit'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
